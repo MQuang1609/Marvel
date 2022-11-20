@@ -83,10 +83,10 @@
 
 #bep-img {
     position: absolute;
-    width: 27vw;
-    top: 10vh;
+    width: 25vw;
+    top: 14vh;
     right: 10px;
-    height: 80vh;
+    height: 76vh;
     opacity: 1;
     z-index: 999999999;
     object-fit: cover;

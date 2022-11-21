@@ -1,4 +1,5 @@
 .bep-section {
+    position: relative;
     box-shadow: none;
     background-color: rgb(18, 18, 18);
     height: 90vh;
@@ -83,13 +84,11 @@
 
 #bep-img {
     position: absolute;
-    width: 25vw;
-    top: 14vh;
-    right: 10px;
-    height: 76vh;
-    opacity: 1;
-    z-index: 9;
-    object-fit: cover;
+    width: 448px;
+    bottom: 0;
+    right: 0;
+    height: 688px;
+    text-align: left;
 }
 
 
@@ -98,13 +97,13 @@
     z-index: 10;
     box-shadow: none;
     background-color: rgb(164, 29, 29);
-    height: 90vh;
+    height: 80vh;
     position: relative;
 }
 
 #img-left {
     width: 27vw;
-    top: 20vh;
+    top: 15vh;
     left: 5px;
     height: 100vh;
     position: absolute;
@@ -115,12 +114,11 @@
     position: absolute;
     width: 30vw;
     right: 0;
-    height: 106vh;
+    height: 86vh;
 }
 
 #contents {
     width: 646px;
-    top: 33px;
     left: 50%;
     transform: translateX(-50%);
     /* height: 450px; */
@@ -252,3 +250,206 @@
     width: 100%;
     object-fit: cover;
 }
+
+#content-img-left {
+    position: absolute;
+    width: 450px;
+    top: 60px;
+    left: -150px;
+    height: 650px;
+    font-size: 15.2px;
+    text-align: left;
+}
+
+#logo-heart {
+    position: absolute;
+    width: 301px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    height: 252px;
+    font-size: 15.2px;
+    text-align: left;
+}
+
+#content-logo {
+    position: absolute;
+    width: 600px;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 30px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#BEP-GROUP68 {
+    width: 1193px;
+    top: 102px;
+    left: 19px;
+    height: 581px;
+    font-size: 16px;
+    text-align: left;
+}
+
+#BEP-PARAGRAPH40 {
+    width: 1042px;
+    top: -5px;
+    left: 285px;
+    height: 19px;
+    /* font-size: 15.2px; */
+    text-align: left;
+    color: white;
+    border-width: 3px 0px 0px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    transform: none;
+    text-shadow: none;
+    position: absolute;
+}
+
+#BEP-PARAGRAPH45 {
+    width: 500px;
+    top: 2px;
+    left: 1100px;
+    height: 110px;
+    font-size: 18px;
+    text-align: justify;
+    position: absolute;
+}
+
+#BEP-PARAGRAPH41 {
+    width: 550px;
+    top: 115px;
+    left: 500px;
+    height: 50px;
+    font-size: 18px;
+    text-align: justify;
+    position: absolute;
+}
+
+#BEP-PARAGRAPH42 {
+    box-shadow: none;
+    border-width: 3px 0px 0px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    transform: none;
+    text-shadow: none;
+    width: 529px;
+    height: 19px;
+    font-size: 15.2px;
+    text-align: left;
+    position: absolute;
+    top: 200px;
+    left: 280px;
+}
+
+#BEP-PARAGRAPH44 {
+    border-width: 3px 0px 0px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    transform: none;
+    text-shadow: none;
+    width: 400px;
+    height: 19px;
+    font-size: 15.2px;
+    text-align: left;
+    position: absolute;
+    top: 450px;
+    left: 260px;
+}
+
+#BEP-PARAGRAPH46 {
+    box-shadow: none;
+    justify-content: space-between;
+    width: 1000px;
+    height: 110px;
+    font-size: 18px;
+    text-align: justify;
+    position: absolute;
+    top: 300px;
+    left: 350px;
+}
+
+.content-logo {
+    position: absolute;
+    height: 80px;
+    width: 320px;
+    right: -420px;
+    background: white;
+    bottom: 0;
+}
+
+.content-logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#BEP-PARAGRAPH49 {
+    font-size: inherit;
+    margin-bottom: 0px;
+    transform: none;
+    text-shadow: none;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#BEP-GROUP52 {
+    width: 426px;
+    top: 167px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 465px;
+    font-size: 15.2px;
+    text-align: left;
+    position: absolute;
+}
+
+#BEP-ELEMENT53 {
+    position: relative;
+    width: 425px;
+    height: 464px;
+    font-size: 15.2px;
+    text-align: left;
+}
+
+#BEP-FORM54 {
+    position: absolute;
+    top: 0;
+    width: 358px;
+    left: 33px;
+    height: 395px;
+    font-size: 15.2px;
+    text-align: left;
+}
+
+.form-group {
+    margin-top: 20px;
+}
+
+#BEP-PARAGRAPH55 {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 366px;
+    height: 19px;
+    font-size: 13px;
+    text-align: center;
+}
+
+/* .img-footer {
+    top: 167px;
+    position: absolute;
+    height: 465px;
+    width: 426px;
+    left: 25%;
+}
+
+.img-footer img {
+    height: 100%;
+    width: 100%;
+} */

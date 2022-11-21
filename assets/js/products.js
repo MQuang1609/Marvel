@@ -44,6 +44,15 @@ products.forEach((element, index) => {
     const productFragment = productTemplate.content.cloneNode('true');
     const productElement = productFragment.querySelector('.productTemplate');
 
+    //remove
+    const removeBTN = productElement.querySelector('#removeBtn');
+    removeBTN.addEventListener('click', () => {
+        productWrapper.removeChild(productElement);
+    }
+    )
+
+
+
 
     const STT = productElement.querySelector('.STT');
     STT.innerText = index + 1;

@@ -182,13 +182,10 @@
 }
 
 #collection {
-    position: absolute;
     box-shadow: none;
     width: 40vw;
-    top: 5vh;
-    left: 50%;
-    transform: translateX(-50%);
     height: 60px;
+    margin: 0 auto;
     border-style: solid;
     background-color: rgb(164, 29, 29);
     border-color: rgb(255, 255, 255);
@@ -205,7 +202,7 @@
     color: rgb(255, 255, 255);
 }
 
-#carouselExampleIndicators {
+/* #carouselExampleIndicators {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -40%);
@@ -235,7 +232,7 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
-}
+} */
 
 .carousel-logo {
     position: absolute;

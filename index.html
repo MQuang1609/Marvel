@@ -16,6 +16,24 @@
 </head>
 
 <body>
+    <template id="productRowTemplate">
+        <tr class="productTemplate">
+            <th class="text-white STT" scope="row">1</th>
+            <td class="fs-5 name text-white">John</td>
+            <td class="fs-5 price text-white">Doe</td>
+            <td class="fs-5 image"><img style="width: 80px; height: 80px" src="" alt="">
+            </td>
+            <td class="fs-5 description text-white">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt libero, veritatis delectus vitae,
+                necessitatibus provident, omnis at officiis ab enim eos. Voluptate fugiat ex, suscipit quidem recusandae
+                autem reiciendis dolorum!
+            </td>
+            <td class="action">
+                <button id="editBtn" type="button" class="btn btn-danger m-2">Edit</button>
+                <button id="removeBtn" type="button" class="btn btn-warning m-2">Remove</button>
+            </td>
+        </tr>
+    </template>
     <header class="bep-section">
         <div class="container">
             <div class="bep-element">
@@ -122,59 +140,34 @@
         <div class="bep-section" id="collections"
             style="height: 100vh;;position: relative; box-shadow: none; background-color: rgb(184, 138, 138); background-size: cover; background-image: url(&quot;http://bepage.vn/upload/user/143/70_Infinity-War-Iron-Man-Mark-50-Concept-Art-Revealed-Art-.jpg&quot;);"
             data-backgroundtype="background-image">
-            <div class="container">
+            <div class="container pt-5">
                 <div class="bep-element" id="collection">
                     <h1 class="collection-text">BỘ SƯU TẬP HÌNH ẢNH</h1>
                 </div>
-
-                <div style="position:absolute;" id="carouselExampleIndicators" class="carousel slide"
-                    data-bs-ride="true">
-                    <button style="margin-left: -200px;" class="carousel-control-prev" type="button"
-                        data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                        <span id="test" class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <!-- <span class="visually-hidden">Previous</span> -->
-                    </button>
-                    <button style="margin-right: -200px;" class="carousel-control-next" type="button"
-                        data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <!-- <span class="visually-hidden">Next</span> -->
-                    </button>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="https://bepage.vn/upload/user/143/70_PD1519997096vQU.jpg"
-                                class="d-block w-100 carousel-img" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://bepage.vn/upload/user/143/70_PD1519997096vQU.jpg"
-                                class="d-block w-100 carousel-img" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://bepage.vn/upload/user/143/70_PD1519997096vQU.jpg"
-                                class="d-block w-100 carousel-img" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://bepage.vn/upload/user/143/70_PD1519997096vQU.jpg"
-                                class="d-block w-100 carousel-img" alt="...">
+                <div id="products" class="">
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <div class="bg-none rounded h-100 p-4">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-white fs-4" scope="col">STT</th>
+                                                <th class="text-white fs-4" scope="col">Name</th>
+                                                <th class="text-white fs-4" scope="col">Price</th>
+                                                <th class="text-white fs-4" scope="col">Image</th>
+                                                <th class="text-white fs-4" scope="col">Description</th>
+                                                <th class="text-white fs-4" scope="col">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="productWrapper">
+                                            <!-- add products here -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1">
-                        <img src="https://bepage.vn/upload/user/143/70_PD1519997096vQU.jpg"
-                            class="d-block w-100 carousel-img" alt="..."></button>
-                    <button class="active" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide-to="1" aria-label="Slide 2">
-                        <img src="https://bepage.vn/upload/user/143/70_PD1519997096vQU.jpg"
-                            class="d-block w-100 carousel-img" alt="..."></button>
-                    <button class="active" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide-to="2" aria-label="Slide 3">
-                        <img src="https://bepage.vn/upload/user/143/70_PD1519997096vQU.jpg"
-                            class="d-block w-100 carousel-img" alt="..."></button>
-                    <button class="active" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide-to="3" aria-label="Slide 4">
-                        <img src="https://bepage.vn/upload/user/143/70_PD1519997096vQU.jpg"
-                            class="d-block w-100 carousel-img" alt="..."></button>
                 </div>
                 <div class="carousel-logo"><img
                         src="https://bepage.vn/upload/user/143/70_new-marvel-studios-logo-debuted-marvelstudios-3.png"
@@ -327,8 +320,9 @@
             </div>
         </div>
         </div>
-    </main>
 
+    </main>
+    <script src="/assets/js/products.js"></script>
 </body>
 
 </html>

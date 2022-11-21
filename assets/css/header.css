@@ -88,13 +88,14 @@
     right: 10px;
     height: 76vh;
     opacity: 1;
-    z-index: 999999999;
+    z-index: 9;
     object-fit: cover;
 }
 
 
 .bep-content {
     width: 100%;
+    z-index: 10;
     box-shadow: none;
     background-color: rgb(164, 29, 29);
     height: 90vh;
@@ -107,14 +108,14 @@
     left: 5px;
     height: 100vh;
     position: absolute;
-    z-index: 999999;
+    z-index: 9999;
 }
 
 #img-right {
     position: absolute;
     width: 30vw;
     right: 0;
-    height: 110vh;
+    height: 106vh;
 }
 
 #contents {
@@ -161,7 +162,6 @@
 
 #bep-background {
     position: relative;
-
 }
 
 #background-left {
